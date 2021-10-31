@@ -36,7 +36,7 @@ x_vals, y_vals = np.meshgrid(np.arange(x_min, x_max, step_size),
                              np.arange(y_min, y_max, step_size))
 
 # Predict output labels for al the points on the grid
-output = kmeans.predict(np.c_[x_vals.ravel(), y_vals.ravel()])
+outputb = kmeans.predict(np.c_[x_vals.ravel(), y_vals.ravel()])
 
 # Plot different regions and color them
 output = output.reshape(x_vals.shape)
